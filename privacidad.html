@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cuadra · Privacidad y términos</title>
+<link rel="icon" href="marca.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#F7F5EF;--ink:#14201C;--muted:#5B6661;--line:#DDD8CB;--pino:#0F5C4A;--aviso:#FCEBCF;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--bg:#0E1613;--ink:#EEF2EE;--muted:#A3B0AA;--line:#2A3833;--pino:#4CC2A0;--aviso:#3A2C14;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:16.5px;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:32px max(18px,env(safe-area-inset-left,0px)) 64px}
+a{color:var(--pino)}
+h1{font-size:32px;line-height:1.15;letter-spacing:-.02em;margin:18px 0 4px}
+h2{font-size:20px;margin:32px 0 6px}
+.f{color:var(--muted);margin:0 0 20px}
+.borrador{background:var(--aviso);border-radius:12px;padding:12px 14px;font-size:15px}
+li{margin-bottom:4px}
+</style>
+</head>
+<body>
+<main>
+<a href="index.html">← Volver a Cuadra</a>
+<h1>Privacidad y términos de uso</h1>
+<p class="f">Última actualización: <span id="fecha">octubre de 2026</span></p>
+
+<p class="borrador"><b>Borrador para revisar.</b> Este texto es una base general. Antes de cobrar, pídele a un abogado que lo revise y complete los datos de quien ofrece el servicio, según la Ley 8968 de Protección de la Persona frente al Tratamiento de sus Datos Personales.</p>
+
+<h2>1. Quién ofrece Cuadra</h2>
+<p>Cuadra es un servicio de <b>Al Día Sistemas</b>, ofrecido por <b>[nombre completo o razón social]</b>, cédula <b>[número]</b>, en Costa Rica. Contacto: <a class="mail" href="#">[correo]</a>.</p>
+
+<h2>2. Qué datos guardamos</h2>
+<ul>
+<li>Datos de la cuenta: nombre, correo electrónico, número de WhatsApp (opcional) y contraseña cifrada.</li>
+<li>Lo que tú anotas en la app: cuentas, sobres, montos, deudas, ahorros, suscripciones y notas.</li>
+<li>Datos de pago del plan: fecha, monto, meses pagados y número de comprobante SINPE.</li>
+</ul>
+<p>Cuadra <b>no</b> se conecta a tu banco ni pide claves bancarias, números de tarjeta o cuentas.</p>
+
+<h2>3. Para qué los usamos</h2>
+<ul>
+<li>Para que puedas usar la app y ver tus datos desde cualquier dispositivo.</li>
+<li>Para activar tu plan y avisarte cuando esté por vencer.</li>
+<li>No vendemos ni compartimos tus datos con nadie para publicidad.</li>
+</ul>
+
+<h2>4. Dónde se guardan y quién los ve</h2>
+<p>Los datos se guardan en servidores de Supabase, un proveedor de bases de datos en la nube. Cada cuenta está separada: solo tú puedes ver lo que anotas. La persona administradora del servicio puede ver tu nombre, correo, teléfono y el estado de tu plan para gestionar los pagos, pero no tus movimientos.</p>
+
+<h2>5. Tus derechos</h2>
+<p>Puedes pedir en cualquier momento ver, corregir o borrar tus datos, o cerrar tu cuenta, escribiendo a <a class="mail" href="#">[correo]</a>. También puedes copiar un respaldo de tu información desde Ajustes en la app.</p>
+
+<h2>6. Planes y pagos</h2>
+<ul>
+<li>Las cuentas nuevas tienen un periodo de prueba gratis.</li>
+<li>Después, la suscripción se paga por mes, por adelantado, por SINPE Móvil u otro medio indicado en la app.</li>
+<li>Si no renuevas, tus datos no se borran: puedes entrar y verlos, pero no anotar cosas nuevas hasta renovar.</li>
+<li>Los pagos hechos no se reembolsan salvo error en el cobro.</li>
+</ul>
+
+<h2>7. Uso del servicio</h2>
+<p>Cuadra es una herramienta para organizar tus finanzas personales. No es asesoría financiera ni contable. Tú eres responsable de la información que anotas. Hacemos lo posible por mantener el servicio disponible y seguro, pero puede haber interrupciones; te recomendamos copiar un respaldo de vez en cuando.</p>
+
+<h2>8. Cambios</h2>
+<p>Si cambiamos estas condiciones o el precio, te avisaremos con anticipación dentro de la app o por correo.</p>
+</main>
+<script src="config.js"></script>
+<script>
+var c=(window.CUADRA||{}).CORREO_CONTACTO;
+if(c&&!/tudominio/.test(c)) document.querySelectorAll('.mail').forEach(function(a){ a.textContent=c; a.href='mailto:'+c; });
+</script>
+</body>
+</html>
